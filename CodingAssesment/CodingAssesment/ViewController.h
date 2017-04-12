@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISearchBar *acronymSearchBar;
 
+@property (weak, nonatomic) IBOutlet UITableView *acronymTableView;
 
 @end
 

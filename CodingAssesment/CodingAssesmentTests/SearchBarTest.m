@@ -1,18 +1,20 @@
 //
-//  CodingAssesmentTests.m
-//  CodingAssesmentTests
+//  SearchBarTest.m
+//  CodingAssesment
 //
 //  Created by jose humberto partida garduño on 4/12/17.
 //  Copyright © 2017 jose humberto partida garduño. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "AcronymSerachBarManager.h"
 
-@interface CodingAssesmentTests : XCTestCase
+
+@interface SearchBarTest : XCTestCase
 
 @end
 
-@implementation CodingAssesmentTests
+@implementation SearchBarTest
 
 - (void)setUp {
     [super setUp];
@@ -27,13 +29,14 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString* userInput = @" ";
+    BOOL result = [[AcronymSerachBarManager sharedInstance] validateSearchBarInputText:userInput];
+    XCTAssertTrue(result);
+
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+
 
 @end

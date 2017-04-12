@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		463A0AF7A1F8F7B03661FFFE /* libPods-CodingAssesment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 448D8F21F19CA88C532ABB51 /* libPods-CodingAssesment.a */; };
+		75DB7B7A1E9EA9DC00041F60 /* SearchBarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B791E9EA9DC00041F60 /* SearchBarTest.m */; };
+		75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B7D1E9EAAD100041F60 /* APIClient.m */; };
+		75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B811E9EB85000041F60 /* TableViewDataSource.m */; };
+		75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B841E9EB86400041F60 /* TableViewDelegate.m */; };
 		75DF9D091E9E87BB002F7B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D081E9E87BB002F7B21 /* main.m */; };
 		75DF9D0C1E9E87BB002F7B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0B1E9E87BB002F7B21 /* AppDelegate.m */; };
 		75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0E1E9E87BB002F7B21 /* ViewController.m */; };
 		75DF9D121E9E87BB002F7B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF9D101E9E87BB002F7B21 /* Main.storyboard */; };
 		75DF9D141E9E87BB002F7B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF9D131E9E87BB002F7B21 /* Assets.xcassets */; };
 		75DF9D171E9E87BB002F7B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF9D151E9E87BB002F7B21 /* LaunchScreen.storyboard */; };
-		75DF9D221E9E87BB002F7B21 /* CodingAssesmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D211E9E87BB002F7B21 /* CodingAssesmentTests.m */; };
+		75DF9D301E9E9455002F7B21 /* AcronymSerachBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D2F1E9E9455002F7B21 /* AcronymSerachBarManager.m */; };
 		A01FC55936960134BB9B703D /* libPods-CodingAssesmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A815D521A87B5234A666DC /* libPods-CodingAssesmentTests.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,13 @@
 		429A6C50F80F77B64CAC1011 /* Pods-CodingAssesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingAssesmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingAssesmentTests/Pods-CodingAssesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		448D8F21F19CA88C532ABB51 /* libPods-CodingAssesment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodingAssesment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A815D521A87B5234A666DC /* libPods-CodingAssesmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodingAssesmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DB7B791E9EA9DC00041F60 /* SearchBarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarTest.m; sourceTree = "<group>"; };
+		75DB7B7C1E9EAAD100041F60 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIClient.h; path = Network/APIClient.h; sourceTree = "<group>"; };
+		75DB7B7D1E9EAAD100041F60 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIClient.m; path = Network/APIClient.m; sourceTree = "<group>"; };
+		75DB7B801E9EB85000041F60 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		75DB7B811E9EB85000041F60 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		75DB7B831E9EB86400041F60 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		75DB7B841E9EB86400041F60 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
 		75DF9D041E9E87BB002F7B21 /* CodingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF9D081E9E87BB002F7B21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75DF9D0A1E9E87BB002F7B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,8 +54,9 @@
 		75DF9D161E9E87BB002F7B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75DF9D181E9E87BB002F7B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DF9D1D1E9E87BB002F7B21 /* CodingAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75DF9D211E9E87BB002F7B21 /* CodingAssesmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodingAssesmentTests.m; sourceTree = "<group>"; };
 		75DF9D231E9E87BB002F7B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DF9D2E1E9E9455002F7B21 /* AcronymSerachBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AcronymSerachBarManager.h; path = Managers/AcronymSerachBarManager.h; sourceTree = "<group>"; };
+		75DF9D2F1E9E9455002F7B21 /* AcronymSerachBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AcronymSerachBarManager.m; path = Managers/AcronymSerachBarManager.m; sourceTree = "<group>"; };
 		872F5541A23334FD8D888460 /* Pods-CodingAssesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingAssesmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingAssesmentTests/Pods-CodingAssesmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		B59351BFA91FE242766BBDA9 /* Pods-CodingAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingAssesment.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodingAssesment/Pods-CodingAssesment.release.xcconfig"; sourceTree = "<group>"; };
 		B878AA6EC6D3BAE822678715 /* Pods-CodingAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodingAssesment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodingAssesment/Pods-CodingAssesment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +93,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		75DB7B7B1E9EAAB400041F60 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				75DB7B7C1E9EAAD100041F60 /* APIClient.h */,
+				75DB7B7D1E9EAAD100041F60 /* APIClient.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		75DB7B7F1E9EB41D00041F60 /* DataSourceAndDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				75DB7B801E9EB85000041F60 /* TableViewDataSource.h */,
+				75DB7B811E9EB85000041F60 /* TableViewDataSource.m */,
+				75DB7B831E9EB86400041F60 /* TableViewDelegate.h */,
+				75DB7B841E9EB86400041F60 /* TableViewDelegate.m */,
+			);
+			name = DataSourceAndDelegate;
+			sourceTree = "<group>";
+		};
 		75DF9CFB1E9E87BB002F7B21 = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +136,12 @@
 		75DF9D061E9E87BB002F7B21 /* CodingAssesment */ = {
 			isa = PBXGroup;
 			children = (
+				75DB7B7F1E9EB41D00041F60 /* DataSourceAndDelegate */,
+				75DB7B7B1E9EAAB400041F60 /* Network */,
+				75DF9D311E9E945D002F7B21 /* Managers */,
+				75DF9D2C1E9E922D002F7B21 /* ViewControllers */,
 				75DF9D0A1E9E87BB002F7B21 /* AppDelegate.h */,
 				75DF9D0B1E9E87BB002F7B21 /* AppDelegate.m */,
-				75DF9D0D1E9E87BB002F7B21 /* ViewController.h */,
-				75DF9D0E1E9E87BB002F7B21 /* ViewController.m */,
 				75DF9D101E9E87BB002F7B21 /* Main.storyboard */,
 				75DF9D131E9E87BB002F7B21 /* Assets.xcassets */,
 				75DF9D151E9E87BB002F7B21 /* LaunchScreen.storyboard */,
@@ -128,10 +162,28 @@
 		75DF9D201E9E87BB002F7B21 /* CodingAssesmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				75DF9D211E9E87BB002F7B21 /* CodingAssesmentTests.m */,
 				75DF9D231E9E87BB002F7B21 /* Info.plist */,
+				75DB7B791E9EA9DC00041F60 /* SearchBarTest.m */,
 			);
 			path = CodingAssesmentTests;
+			sourceTree = "<group>";
+		};
+		75DF9D2C1E9E922D002F7B21 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75DF9D0D1E9E87BB002F7B21 /* ViewController.h */,
+				75DF9D0E1E9E87BB002F7B21 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75DF9D311E9E945D002F7B21 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				75DF9D2E1E9E9455002F7B21 /* AcronymSerachBarManager.h */,
+				75DF9D2F1E9E9455002F7B21 /* AcronymSerachBarManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		D8D234166ED740F9F5C187FA /* Frameworks */ = {
@@ -346,9 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */,
+				75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */,
+				75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */,
 				75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */,
 				75DF9D0C1E9E87BB002F7B21 /* AppDelegate.m in Sources */,
 				75DF9D091E9E87BB002F7B21 /* main.m in Sources */,
+				75DF9D301E9E9455002F7B21 /* AcronymSerachBarManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DF9D221E9E87BB002F7B21 /* CodingAssesmentTests.m in Sources */,
+				75DB7B7A1E9EA9DC00041F60 /* SearchBarTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +539,7 @@
 			baseConfigurationReference = B878AA6EC6D3BAE822678715 /* Pods-CodingAssesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BaseUrl = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
+				BASE_URL = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
 				DEVELOPMENT_TEAM = 53G2VW7YM8;
 				INFOPLIST_FILE = CodingAssesment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,7 +553,7 @@
 			baseConfigurationReference = B59351BFA91FE242766BBDA9 /* Pods-CodingAssesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BaseUrl = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
+				BASE_URL = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
 				DEVELOPMENT_TEAM = 53G2VW7YM8;
 				INFOPLIST_FILE = CodingAssesment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -553,6 +609,7 @@
 				75DF9D281E9E87BB002F7B21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75DF9D291E9E87BB002F7B21 /* Build configuration list for PBXNativeTarget "CodingAssesmentTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +618,7 @@
 				75DF9D2B1E9E87BB002F7B21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AcronymSerachBarManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self setupAcronymSearchBar];
 }
 
 
@@ -24,6 +26,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+-(void)setupAcronymSearchBar{
+    self.acronymSearchBar.autocapitalizationType = UITextAutocapitalizationTypeAllCharacters;
+    self.acronymSearchBar.delegate = [AcronymSerachBarManager sharedInstance];
+}
+
+
 
 
 @end
