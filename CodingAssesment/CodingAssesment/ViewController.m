@@ -37,6 +37,7 @@
 
 -(void)setupRequestManager{
     [RequestManager sharedInstance].delegate = self;
+    [RequestManager sharedInstance].progressReferenceView = self.view;
 }
 
 

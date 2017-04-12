@@ -46,6 +46,7 @@
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     NSString* text = searchBar.text;
     NSDictionary* data = [[NSDictionary alloc] initWithObjectsAndKeys:text,@"sf", nil];
+    [[RequestManager sharedInstance].progressReferenceView endEditing:YES];
     [[RequestManager sharedInstance] makeRequest:text dataDictionary:data];
 }
 

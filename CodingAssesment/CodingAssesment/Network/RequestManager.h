@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol RequestManagerDelegate
 
@@ -19,6 +20,7 @@
 @interface RequestManager : NSObject
 @property (nonatomic,assign) id<RequestManagerDelegate>delegate;
 + (instancetype)sharedInstance;
+@property (nonatomic,weak) UIView* progressReferenceView;
 -(void)makeRequest:(NSString*)text dataDictionary:(NSDictionary*)data;
 
 

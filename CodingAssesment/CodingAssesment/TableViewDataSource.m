@@ -18,6 +18,9 @@
 
 @implementation TableViewDataSource
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return  @"Acronyms";
+}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
