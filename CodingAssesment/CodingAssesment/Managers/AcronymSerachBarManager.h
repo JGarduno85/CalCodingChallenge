@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
+
+
 @interface AcronymSerachBarManager : NSObject <UISearchBarDelegate>
+
+
 + (instancetype)sharedInstance;
 -(BOOL)validateSearchBarInputText:(NSString*)text;
+
 @end

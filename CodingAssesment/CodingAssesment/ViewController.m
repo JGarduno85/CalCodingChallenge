@@ -8,8 +8,14 @@
 
 #import "ViewController.h"
 #import "AcronymSerachBarManager.h"
+#import "TableViewCell.h"
+#import "TableViewDataSource.h"
+#import "TableViewDelegate.h"
+#import "RequestManager.h"
 
-@interface ViewController ()
+@interface ViewController () <RequestManagerDelegate>
+
+@property(nonatomic,strong) TableViewDataSource* dataSource;
 
 @end
 
@@ -19,12 +25,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self setupAcronymSearchBar];
+    [self setupTableView];
+    [self setupRequestManager];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setupRequestManager{
+    [RequestManager sharedInstance].delegate = self;
 }
 
 
@@ -34,6 +46,25 @@
 }
 
 
+-(void)setupTableView{
+    [self.acronymTableView registerNib:[UINib nibWithNibName:NSStringFromClass([TableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([TableViewCell class])];
+    self.acronymTableView.rowHeight = UITableViewAutomaticDimension;
+    self.acronymTableView.estimatedRowHeight = 44;
+    self.dataSource = [[TableViewDataSource alloc] init];
+    self.acronymTableView.dataSource = self.dataSource;
+}
+
+
+-(void)searchCompletedWithSuccess:(id)response{
+    //NSLog(response);
+    NSArray* dataArray = (NSArray*)response;
+    self.dataSource.data = dataArray;
+    [self.acronymTableView reloadData];
+}
+
+-(void)searchFail:(NSError *)error{
+    //NSLog(error);
+}
 
 
 @end

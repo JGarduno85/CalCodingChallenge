@@ -7,11 +7,11 @@
 //
 
 #import "AcronymSerachBarManager.h"
+#import "RequestManager.h"
 #import "APIClient.h"
 
+
 @interface AcronymSerachBarManager()
-
-
 
 @end
 
@@ -46,11 +46,7 @@
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     NSString* text = searchBar.text;
     NSDictionary* data = [[NSDictionary alloc] initWithObjectsAndKeys:text,@"sf", nil];
-    [[APIClient sharedInstance] makeRequest:text dataDictionary:data andSuccess:^(id response){
-        NSLog(response);
-    }andFail:^(NSError* error){
-        NSLog(error);
-    }];
+    [[RequestManager sharedInstance] makeRequest:text dataDictionary:data];
 }
 
 @end

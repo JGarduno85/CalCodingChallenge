@@ -12,6 +12,10 @@
 		75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B7D1E9EAAD100041F60 /* APIClient.m */; };
 		75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B811E9EB85000041F60 /* TableViewDataSource.m */; };
 		75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B841E9EB86400041F60 /* TableViewDelegate.m */; };
+		75DB7B8A1E9EC2CD00041F60 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B881E9EC2CD00041F60 /* TableViewCell.m */; };
+		75DB7B8B1E9EC2CD00041F60 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */; };
+		75DB7B8F1E9EC65500041F60 /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B8E1E9EC65500041F60 /* Acronym.m */; };
+		75DB7B921E9EC91E00041F60 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B911E9EC91E00041F60 /* RequestManager.m */; };
 		75DF9D091E9E87BB002F7B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D081E9E87BB002F7B21 /* main.m */; };
 		75DF9D0C1E9E87BB002F7B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0B1E9E87BB002F7B21 /* AppDelegate.m */; };
 		75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0E1E9E87BB002F7B21 /* ViewController.m */; };
@@ -43,6 +47,13 @@
 		75DB7B811E9EB85000041F60 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
 		75DB7B831E9EB86400041F60 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
 		75DB7B841E9EB86400041F60 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
+		75DB7B871E9EC2CD00041F60 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		75DB7B881E9EC2CD00041F60 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		75DB7B8D1E9EC65500041F60 /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acronym.h; path = Model/Acronym.h; sourceTree = "<group>"; };
+		75DB7B8E1E9EC65500041F60 /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acronym.m; path = Model/Acronym.m; sourceTree = "<group>"; };
+		75DB7B901E9EC91E00041F60 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestManager.h; path = Network/RequestManager.h; sourceTree = "<group>"; };
+		75DB7B911E9EC91E00041F60 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = Network/RequestManager.m; sourceTree = "<group>"; };
 		75DF9D041E9E87BB002F7B21 /* CodingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF9D081E9E87BB002F7B21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75DF9D0A1E9E87BB002F7B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,11 +109,13 @@
 			children = (
 				75DB7B7C1E9EAAD100041F60 /* APIClient.h */,
 				75DB7B7D1E9EAAD100041F60 /* APIClient.m */,
+				75DB7B901E9EC91E00041F60 /* RequestManager.h */,
+				75DB7B911E9EC91E00041F60 /* RequestManager.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
 		};
-		75DB7B7F1E9EB41D00041F60 /* DataSourceAndDelegate */ = {
+		75DB7B7F1E9EB41D00041F60 /* TableViewDataSourceAndDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				75DB7B801E9EB85000041F60 /* TableViewDataSource.h */,
@@ -110,7 +123,26 @@
 				75DB7B831E9EB86400041F60 /* TableViewDelegate.h */,
 				75DB7B841E9EB86400041F60 /* TableViewDelegate.m */,
 			);
-			name = DataSourceAndDelegate;
+			name = TableViewDataSourceAndDelegate;
+			sourceTree = "<group>";
+		};
+		75DB7B861E9EC2AC00041F60 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				75DB7B871E9EC2CD00041F60 /* TableViewCell.h */,
+				75DB7B881E9EC2CD00041F60 /* TableViewCell.m */,
+				75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		75DB7B8C1E9EC63B00041F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75DB7B8D1E9EC65500041F60 /* Acronym.h */,
+				75DB7B8E1E9EC65500041F60 /* Acronym.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		75DF9CFB1E9E87BB002F7B21 = {
@@ -136,7 +168,9 @@
 		75DF9D061E9E87BB002F7B21 /* CodingAssesment */ = {
 			isa = PBXGroup;
 			children = (
-				75DB7B7F1E9EB41D00041F60 /* DataSourceAndDelegate */,
+				75DB7B8C1E9EC63B00041F60 /* Model */,
+				75DB7B861E9EC2AC00041F60 /* TableViewCells */,
+				75DB7B7F1E9EB41D00041F60 /* TableViewDataSourceAndDelegate */,
 				75DB7B7B1E9EAAB400041F60 /* Network */,
 				75DF9D311E9E945D002F7B21 /* Managers */,
 				75DF9D2C1E9E922D002F7B21 /* ViewControllers */,
@@ -286,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DF9D171E9E87BB002F7B21 /* LaunchScreen.storyboard in Resources */,
+				75DB7B8B1E9EC2CD00041F60 /* TableViewCell.xib in Resources */,
 				75DF9D141E9E87BB002F7B21 /* Assets.xcassets in Resources */,
 				75DF9D121E9E87BB002F7B21 /* Main.storyboard in Resources */,
 			);
@@ -398,11 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DB7B8F1E9EC65500041F60 /* Acronym.m in Sources */,
 				75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */,
 				75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */,
 				75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */,
 				75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */,
+				75DB7B921E9EC91E00041F60 /* RequestManager.m in Sources */,
 				75DF9D0C1E9E87BB002F7B21 /* AppDelegate.m in Sources */,
+				75DB7B8A1E9EC2CD00041F60 /* TableViewCell.m in Sources */,
 				75DF9D091E9E87BB002F7B21 /* main.m in Sources */,
 				75DF9D301E9E9455002F7B21 /* AcronymSerachBarManager.m in Sources */,
 			);
