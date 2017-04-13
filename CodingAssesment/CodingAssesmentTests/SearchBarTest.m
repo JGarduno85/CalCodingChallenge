@@ -26,16 +26,24 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-    NSString* userInput = @" ";
+- (void)testExampleEmptyCharacter{
+    NSString* userInput = @"ASAP";
     BOOL result = [[AcronymSerachBarManager sharedInstance] validateSearchBarInputText:userInput];
     XCTAssertTrue(result);
-
 }
+
+-(void)testSearchSpecialCharacter{
+    NSString* userInput = @"^";
+    BOOL result = [[AcronymSerachBarManager sharedInstance] validateSearchBarInputText:userInput];
+    XCTAssertFalse(result);
+}
+
+-(void)testSearchNumber{
+    NSString* userInput = @"1234";
+    BOOL result = [[AcronymSerachBarManager sharedInstance] validateSearchBarInputText:userInput];
+    XCTAssertFalse(result);
+}
+
 
 
 

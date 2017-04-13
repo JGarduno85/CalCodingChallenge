@@ -23,6 +23,15 @@
 }
 
 -(void)makeRequest:(NSString*)text dataDictionary:(NSDictionary*)data{
+    if ([text isEqualToString:@" "] || data == nil)
+    {
+        if(self.delegate != nil){
+            NSDictionary* userInfo = @{NSLocalizedDescriptionKey:NSLocalizedString(@"input for the request is not well formed",nil),
+                                       NSLocalizedFailureReasonErrorKey:NSLocalizedString(@"the input text and data is nil these values won't produce any result from the request",nil)
+                                       };
+            [self.delegate searchFail:[NSError errorWithDomain:@"Bad input error" code:100 userInfo:userInfo]];
+        }
+    }
     __weak typeof(self) weakSelf = self;
     if(self.progressReferenceView != nil){
         [MBProgressHUD showHUDAddedTo:self.progressReferenceView animated:YES];
@@ -33,6 +42,9 @@
             NSArray* acronymsArray = [results valueForKey:@"lfs"];
             if(weakSelf.progressReferenceView != nil){
                 [MBProgressHUD hideHUDForView:weakSelf.progressReferenceView animated:YES];
+            }
+            if(acronymsArray == nil || acronymsArray.count == 0){
+                acronymsArray = [[NSArray alloc] init];
             }
             [weakSelf.delegate searchCompletedWithSuccess:acronymsArray];
         }

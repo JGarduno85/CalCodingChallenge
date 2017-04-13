@@ -57,14 +57,13 @@
 
 
 -(void)searchCompletedWithSuccess:(id)response{
-    //NSLog(response);
     NSArray* dataArray = (NSArray*)response;
     self.dataSource.data = dataArray;
     [self.acronymTableView reloadData];
 }
 
 -(void)searchFail:(NSError *)error{
-    //NSLog(error);
+    
 }
 
 

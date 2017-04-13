@@ -14,8 +14,8 @@
 		75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B841E9EB86400041F60 /* TableViewDelegate.m */; };
 		75DB7B8A1E9EC2CD00041F60 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B881E9EC2CD00041F60 /* TableViewCell.m */; };
 		75DB7B8B1E9EC2CD00041F60 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */; };
-		75DB7B8F1E9EC65500041F60 /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B8E1E9EC65500041F60 /* Acronym.m */; };
 		75DB7B921E9EC91E00041F60 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B911E9EC91E00041F60 /* RequestManager.m */; };
+		75DB7B941E9ED7E800041F60 /* NetworkRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B931E9ED7E800041F60 /* NetworkRequestTest.m */; };
 		75DF9D091E9E87BB002F7B21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D081E9E87BB002F7B21 /* main.m */; };
 		75DF9D0C1E9E87BB002F7B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0B1E9E87BB002F7B21 /* AppDelegate.m */; };
 		75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF9D0E1E9E87BB002F7B21 /* ViewController.m */; };
@@ -50,10 +50,9 @@
 		75DB7B871E9EC2CD00041F60 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		75DB7B881E9EC2CD00041F60 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		75DB7B8D1E9EC65500041F60 /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acronym.h; path = Model/Acronym.h; sourceTree = "<group>"; };
-		75DB7B8E1E9EC65500041F60 /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acronym.m; path = Model/Acronym.m; sourceTree = "<group>"; };
 		75DB7B901E9EC91E00041F60 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestManager.h; path = Network/RequestManager.h; sourceTree = "<group>"; };
 		75DB7B911E9EC91E00041F60 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestManager.m; path = Network/RequestManager.m; sourceTree = "<group>"; };
+		75DB7B931E9ED7E800041F60 /* NetworkRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestTest.m; sourceTree = "<group>"; };
 		75DF9D041E9E87BB002F7B21 /* CodingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF9D081E9E87BB002F7B21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75DF9D0A1E9E87BB002F7B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,15 +135,6 @@
 			name = TableViewCells;
 			sourceTree = "<group>";
 		};
-		75DB7B8C1E9EC63B00041F60 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				75DB7B8D1E9EC65500041F60 /* Acronym.h */,
-				75DB7B8E1E9EC65500041F60 /* Acronym.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		75DF9CFB1E9E87BB002F7B21 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +158,6 @@
 		75DF9D061E9E87BB002F7B21 /* CodingAssesment */ = {
 			isa = PBXGroup;
 			children = (
-				75DB7B8C1E9EC63B00041F60 /* Model */,
 				75DB7B861E9EC2AC00041F60 /* TableViewCells */,
 				75DB7B7F1E9EB41D00041F60 /* TableViewDataSourceAndDelegate */,
 				75DB7B7B1E9EAAB400041F60 /* Network */,
@@ -198,6 +187,7 @@
 			children = (
 				75DF9D231E9E87BB002F7B21 /* Info.plist */,
 				75DB7B791E9EA9DC00041F60 /* SearchBarTest.m */,
+				75DB7B931E9ED7E800041F60 /* NetworkRequestTest.m */,
 			);
 			path = CodingAssesmentTests;
 			sourceTree = "<group>";
@@ -433,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DB7B8F1E9EC65500041F60 /* Acronym.m in Sources */,
 				75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */,
 				75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */,
 				75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */,
@@ -450,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DB7B941E9ED7E800041F60 /* NetworkRequestTest.m in Sources */,
 				75DB7B7A1E9EA9DC00041F60 /* SearchBarTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
