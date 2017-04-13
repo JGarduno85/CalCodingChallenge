@@ -38,7 +38,8 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    [manager GET:_baseUrl parameters:data success:^(AFHTTPRequestOperation *operation, id responseObject){
+    NSString* urlstr = [NSString stringWithFormat:@"%@%@",_baseUrl,endPoint];
+    [manager GET:urlstr parameters:data success:^(AFHTTPRequestOperation *operation, id responseObject){
         NSError* error;
         NSDictionary* jsonData = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:&error];
         successBlock(jsonData);

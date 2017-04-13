@@ -10,7 +10,6 @@
 #import "AcronymSerachBarManager.h"
 #import "TableViewCell.h"
 #import "TableViewDataSource.h"
-#import "TableViewDelegate.h"
 #import "RequestManager.h"
 
 @interface ViewController () <RequestManagerDelegate>
