@@ -58,12 +58,24 @@
 
 -(void)searchCompletedWithSuccess:(id)response{
     NSArray* dataArray = (NSArray*)response;
+    if(dataArray == nil || dataArray.count == 0){
+        [self showAlertWithMessage:NSLocalizedString(@"The search doesn't retrieve any data", nil)];
+        return;
+    }
     self.dataSource.data = dataArray;
     [self.acronymTableView reloadData];
 }
 
 -(void)searchFail:(NSError *)error{
-    
+    NSString* message = NSLocalizedString(@"It appears a server error happend, please try again", nil);
+    [self showAlertWithMessage:[NSString stringWithFormat:@"%@:%@",message,error.description]];
+}
+
+-(void)showAlertWithMessage:(NSString*)message{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Message",nil) message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* alertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Ok", nil) style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:alertAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

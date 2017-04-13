@@ -29,7 +29,7 @@ XCTestExpectation* expectation;
 }
 
 - (void)testRequest {
-    NSString* text = @"-";
+    NSString* text = @"ASAP";
     [RequestManager sharedInstance].delegate = self;
     NSDictionary* data = [[NSDictionary alloc] initWithObjectsAndKeys:text,@"sf", nil];
     [[RequestManager sharedInstance] makeRequest:text dataDictionary:data];
@@ -37,6 +37,9 @@ XCTestExpectation* expectation;
 }
 -(void)searchCompletedWithSuccess:(id)response{
     XCTAssertNotNil(response);
+    NSArray* responseArray = (NSArray*) response;
+    XCTAssertNotNil(responseArray);
+    XCTAssertNotEqual(responseArray.count, 0);
     [expectation fulfill];
 }
 
