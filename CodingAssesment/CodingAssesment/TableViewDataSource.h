@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+/*!
+ @brief handles the tableView Data
+ */
 @interface TableViewDataSource : NSObject <UITableViewDataSource>
 
+/*!
+ @brief the array data used to fill the tableview rows
+ */
 @property(nonatomic,strong) NSArray* data;
 
 @end

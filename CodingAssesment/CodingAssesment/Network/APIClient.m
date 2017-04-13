@@ -34,7 +34,7 @@
 }
 
 
--(void)makeRequest:(NSString*)endPoint dataDictionary:(NSDictionary*)data andSuccess:(void(^)(id))successBlock andFail:(void(^)(NSError*))failBlock{
+-(void)makeRequestOnEndPoint:(NSString*)endPoint dataDictionary:(NSDictionary*)data andSuccess:(void(^)(id))successBlock andFail:(void(^)(NSError*))failBlock{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];

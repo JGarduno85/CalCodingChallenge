@@ -19,15 +19,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOl-YT-8HI">
-                        <rect key="frame" x="8" y="8" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sOl-YT-8HI">
+                        <rect key="frame" x="8" y="8" width="304" height="27.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="sOl-YT-8HI" secondAttribute="trailing" id="N4P-iM-u7N"/>
                     <constraint firstItem="sOl-YT-8HI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TGz-uD-yHo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sOl-YT-8HI" secondAttribute="bottom" id="Va0-FB-XSJ"/>
                     <constraint firstItem="sOl-YT-8HI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="f1O-rK-kn4"/>
                 </constraints>
             </tableViewCellContentView>

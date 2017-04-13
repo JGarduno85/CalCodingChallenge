@@ -22,8 +22,8 @@
     return instance;
 }
 
--(void)makeRequest:(NSString*)text dataDictionary:(NSDictionary*)data{
-    if ([text isEqualToString:@" "] || data == nil)
+-(void)makeRequestDataDictionary:(NSDictionary*)data{
+    if (data == nil)
     {
         if(self.delegate != nil){
             NSDictionary* userInfo = @{NSLocalizedDescriptionKey:NSLocalizedString(@"input for the request is not well formed",nil),
@@ -36,7 +36,7 @@
     if(self.progressReferenceView != nil){
         [MBProgressHUD showHUDAddedTo:self.progressReferenceView animated:YES];
     }
-    [[APIClient sharedInstance] makeRequest:text dataDictionary:data andSuccess:^(id response){
+    [[APIClient sharedInstance] makeRequestOnEndPoint:@"/software/acromine/dictionary.py" dataDictionary:data andSuccess:^(id response){
         if (weakSelf.delegate != nil){
             NSArray* results = ((NSArray*)response).firstObject;
             NSArray* acronymsArray = [results valueForKey:@"lfs"];

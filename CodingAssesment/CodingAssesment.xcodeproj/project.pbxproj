@@ -11,7 +11,6 @@
 		75DB7B7A1E9EA9DC00041F60 /* SearchBarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B791E9EA9DC00041F60 /* SearchBarTest.m */; };
 		75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B7D1E9EAAD100041F60 /* APIClient.m */; };
 		75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B811E9EB85000041F60 /* TableViewDataSource.m */; };
-		75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B841E9EB86400041F60 /* TableViewDelegate.m */; };
 		75DB7B8A1E9EC2CD00041F60 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B881E9EC2CD00041F60 /* TableViewCell.m */; };
 		75DB7B8B1E9EC2CD00041F60 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */; };
 		75DB7B921E9EC91E00041F60 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB7B911E9EC91E00041F60 /* RequestManager.m */; };
@@ -45,8 +44,6 @@
 		75DB7B7D1E9EAAD100041F60 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIClient.m; path = Network/APIClient.m; sourceTree = "<group>"; };
 		75DB7B801E9EB85000041F60 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
 		75DB7B811E9EB85000041F60 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
-		75DB7B831E9EB86400041F60 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
-		75DB7B841E9EB86400041F60 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
 		75DB7B871E9EC2CD00041F60 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		75DB7B881E9EC2CD00041F60 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		75DB7B891E9EC2CD00041F60 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -119,8 +116,6 @@
 			children = (
 				75DB7B801E9EB85000041F60 /* TableViewDataSource.h */,
 				75DB7B811E9EB85000041F60 /* TableViewDataSource.m */,
-				75DB7B831E9EB86400041F60 /* TableViewDelegate.h */,
-				75DB7B841E9EB86400041F60 /* TableViewDelegate.m */,
 			);
 			name = TableViewDataSourceAndDelegate;
 			sourceTree = "<group>";
@@ -423,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DB7B851E9EB86400041F60 /* TableViewDelegate.m in Sources */,
 				75DB7B821E9EB85000041F60 /* TableViewDataSource.m in Sources */,
 				75DB7B7E1E9EAAD100041F60 /* APIClient.m in Sources */,
 				75DF9D0F1E9E87BB002F7B21 /* ViewController.m in Sources */,
@@ -567,7 +561,7 @@
 			baseConfigurationReference = B878AA6EC6D3BAE822678715 /* Pods-CodingAssesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
+				BASE_URL = "http://www.nactem.ac.uk";
 				DEVELOPMENT_TEAM = 53G2VW7YM8;
 				INFOPLIST_FILE = CodingAssesment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -581,7 +575,7 @@
 			baseConfigurationReference = B59351BFA91FE242766BBDA9 /* Pods-CodingAssesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				BASE_URL = "http://www.nactem.ac.uk/software/acromine/dictionary.py";
+				BASE_URL = "http://www.nactem.ac.uk";
 				DEVELOPMENT_TEAM = 53G2VW7YM8;
 				INFOPLIST_FILE = CodingAssesment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

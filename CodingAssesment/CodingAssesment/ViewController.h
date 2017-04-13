@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/*!
+ @brief main view controller
+ */
 @interface ViewController : UIViewController
+
+/*!
+ @brief reference to the searchBar
+ */
 @property (weak, nonatomic) IBOutlet UISearchBar *acronymSearchBar;
 
+/*!
+ @brief reference to the tableView
+ */
 @property (weak, nonatomic) IBOutlet UITableView *acronymTableView;
 
 @end

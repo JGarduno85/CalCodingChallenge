@@ -8,20 +8,45 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+/*!
+ @brief Delegate to pass the webservice response
+ */
 @protocol RequestManagerDelegate
 
 @required
+
+/*!
+ @brief the web service responds
+ @param response the actual service response
+ */
 -(void)searchCompletedWithSuccess:(id)response;
+/*!
+ @brief the server responds with some error or a timeout
+ @param error the server error
+ */
 -(void)searchFail:(NSError*)error;
 
 @end
 
+/*!
+ @brief handle the request and responses
+ */
 @interface RequestManager : NSObject
+
 @property (nonatomic,assign) id<RequestManagerDelegate>delegate;
+/*!
+ @brief singleton instance
+ */
 + (instancetype)sharedInstance;
+/*!
+ @brief View reference where the progress action will be add
+ */
 @property (nonatomic,weak) UIView* progressReferenceView;
--(void)makeRequest:(NSString*)text dataDictionary:(NSDictionary*)data;
+/*!
+ @brief make the request with the search criteria
+ @param data the search criteria
+ */
+-(void)makeRequestDataDictionary:(NSDictionary*)data;
 
 
 @end

@@ -45,9 +45,12 @@
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     NSString* text = searchBar.text;
-    NSDictionary* data = [[NSDictionary alloc] initWithObjectsAndKeys:text,@"sf", nil];
+    //The request needs this parameter to find the acronyms
+    NSDictionary* data = @{@"sf":text};
+    //the manager needs the view that will put the progess control and to dismiss the keyboard once the search button is pressed
     [[RequestManager sharedInstance].progressReferenceView endEditing:YES];
-    [[RequestManager sharedInstance] makeRequest:text dataDictionary:data];
+    //the manager handles the logic for the request, response. also handles the result parsing or error handle
+    [[RequestManager sharedInstance] makeRequestDataDictionary:data];
 }
 
 @end
